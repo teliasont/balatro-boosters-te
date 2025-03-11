@@ -1,0 +1,715 @@
+/*-----CSS Reset-----*/
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  background-color: #436d58;
+  background: none;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*-----CSS Styling-----*/
+body {
+  font-family: Monda, Helvectica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  background: #436d58;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #ffde8b;
+}
+
+/*------NAV ELEMENTS-----*/
+
+header {
+  position: relative;
+  background: #2e3738;
+}
+#nav-bar {
+  background: #2e3738;
+  width: 100%;
+  padding: 20px 40px 20px 20px;
+  font-family: "Jersey 10";
+  font-size: 2.5em;
+  line-height: normal;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-img {
+  height: 10%;
+  max-height: 50%;
+  width: 15%;
+  min-width: 125px;
+}
+
+#menu-toggle {
+  display: none;
+}
+.menu-button {
+  display: none; /* Hidden on desktop */
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Creating the top and bottom lines of the hamburger */
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  bottom: -8px;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+.nav-menu li {
+  margin-left: 2rem;
+}
+
+/*-----INTRODUCTION ELEMENTS-----*/
+/*-----INTRODUCTION ELEMENTS-----*/
+/*-----INTRODUCTION ELEMENTS-----*/
+section {
+  position: relative;
+}
+#intro {
+  background: url(https://store.fastly.steamstatic.com/images/storepagebackground/app/2379780?t=1740416199);
+  background-position: center center;
+  padding-top: 40px;
+  top: -10px;
+  loading: lazy;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.intro-container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 1em auto;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  overflow: hidden;
+}
+
+.intro-text {
+  width: 40%;
+  font-size: 1.5em;
+  line-height: normal;
+}
+
+.intro-video {
+  width: 60%;
+  align-content: center;
+  object-fit: fill;
+}
+.intro-video iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 90%;
+  transform-origin: 50% 50%;
+  border: none;
+}
+h1 {
+  font-family: "Jersey 10", Courier, sans-serif;
+  color: #fff;
+  font-family: "Jersey 10";
+  font-size: 110px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+}
+
+.red-button {
+  color: white;
+  padding: 0px 16px;
+  border-radius: 17px;
+  background: #ff4b3e;
+  box-shadow: -10px 10px 2px 0px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  font-family: "Jersey 10", Courier, sans-serif;
+  font-size: 5vw;
+  border: none;
+  margin: 0.75em 5%;
+}
+.red-button a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+.red-button:hover {
+  box-shadow: -5px 5px 0px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+/*-----ABOUT SECTION-----*/
+#about {
+  background: #436d58;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.25em;
+  line-height: normal;
+  margin-bottom: 4em;
+}
+h2 {
+  font-family: "Jersey 10", Courier;
+  font-size: 3.125em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0.5em;
+}
+#about img {
+  margin: 1em auto;
+}
+.bullet-points {
+  width: 75%;
+  margin: 0 auto;
+}
+#about li {
+  margin: 1em;
+}
+
+/*-----PRICING CARDS-----*/
+/*-----PRICING CARDS-----*/
+/*-----PRICING CARDS-----*/
+#packs {
+  border-top: 12px solid #f5d99b;
+  border-bottom: 12px solid #f5d99b;
+  background: radial-gradient(50% 50% at 50% 50%, #5177a7 0%, #1f2c3d 100%);
+}
+.sign {
+  text-align: center;
+  border-radius: 20px;
+  background: #172122;
+  padding-bottom: 40px;
+  width: 60%;
+  max-width: 800px;
+  margin: 40px auto;
+
+  box-shadow: 0 0 0 11px #fff5fa;
+  outline: 11px dashed #b6594a;
+  animation: 2s step-end infinite flashing-lights;
+}
+@keyframes flashing-lights {
+  0% {
+    box-shadow: 0 0 0 11px #b6594a;
+    outline: 11px dashed #fff5fa;
+  }
+  20% {
+    box-shadow: 0 0 0 11px #fff5fa;
+    outline: 11px dashed #b6594a;
+  }
+  40% {
+    box-shadow: 0 0 0 11px #b6594a;
+    outline: 11px dashed #fff5fa;
+  }
+  60% {
+    box-shadow: 0 0 0 11px #fff5fa;
+    outline: 11px dashed #b6594a;
+  }
+  80% {
+    box-shadow: 0 0 0 11px #b6594a;
+    outline: 11px dashed #fff5fa;
+  }
+  90% {
+    box-shadow: 0 0 0 11px #fff5fa;
+    outline: 11px dashed #b6594a;
+  }
+  100% {
+    box-shadow: 0 0 0 11px #b6594a;
+    outline: 11px dashed #fff5fa;
+  }
+}
+.sign h2 {
+  font-size: 100px;
+}
+.sign p {
+  font-size: 32px;
+}
+
+.pricing-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.price-card {
+  background-color: transparent;
+  margin-bottom: 30px;
+  padding: 30px;
+  position: relative;
+  padding-top: 50px;
+  text-align: center;
+  float: left;
+  width: 100%;
+  min-width: 250px; /* Prevent cards from becoming too narrow */
+  max-width: 400px; /* Prevent cards from becoming too wide on large screens */
+}
+
+.card-title {
+  font-family: "Jersey 10", Courier, sans-serif;
+  font-size: 3.125em;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  padding: 0px 16px;
+  border-radius: 17px;
+  background: #ff4b3e;
+  box-shadow: -10px 10px 2px 0px rgba(0, 0, 0, 0.25);
+  margin: 1em auto 0 auto;
+  width: 100%;
+}
+
+.price {
+  margin: 15px auto;
+  color: #d6b163;
+  font-family: "Jersey 10";
+  font-size: 4em;
+  line-height: normal;
+
+  width: fit-content;
+  padding: 0 1em;
+  border-radius: 13px;
+  border-top: 6px solid #172323;
+  border-right: 10px solid #172323;
+  border-bottom: 6px solid #172323;
+  border-left: 10px solid #172323;
+  background: #2e3738;
+}
+
+.price-card img {
+  box-shadow: -16px 14px 2px 0px #1b1d2f;
+  margin: 0 auto;
+  object-fit: cover;
+  background: linear-gradient(
+    90deg,
+    #1b1d2f 0%,
+    #1b1d2f 36%,
+    rgba(31, 47, 27, 0) 58%,
+    rgba(31, 47, 27, 0) 100%
+  );
+}
+
+.features {
+  list-style: none;
+  margin: 20px auto;
+}
+
+.buy-button {
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 17px;
+  background: #5fb485;
+  box-shadow: -10px 10px 2px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  padding: 0 0.5em;
+  font-family: "Jersey 10";
+  font-size: 4em;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.buy-button:hover {
+  box-shadow: -5px 5px 0px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.price-card img:hover {
+  transform: scale(1.25);
+
+  /*I found the animation code from here and modified it: https://www.w3schools.com/howto/howto_css_shake_image.asp */
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.75s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 0px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, 0px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 0px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, 0px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 0px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 0px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 0px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, 0px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, 0px) rotate(-1deg);
+  }
+}
+
+/*-----SUBSCRIBE FORM ELEMENTS-----*/
+#email-sign-up {
+  text-align: center;
+  line-height: normal;
+}
+#email {
+  border-radius: 17px;
+  background: #e79636;
+  border: none;
+  box-shadow: 10px 10px 2px 0px rgba(0, 0, 0, 0.25) inset;
+  padding: 1em 2em;
+  width: 35%;
+  color: #fff;
+  margin-top: 2em;
+}
+#email-sign-up .red-button {
+  width: 50%;
+  min-width: 40%;
+}
+
+/*-----FOOTER ELEMENTS-----*/
+footer {
+  background: #2e3738;
+  width: 100%;
+  padding: 20px 40px 20px 20px;
+  font-family: "Jersey 10";
+  font-size: 2em;
+  line-height: normal;
+  display: flex;
+  justify-content: space-around;
+}
+
+.download-title {
+  grid-column-start: span 2;
+}
+footer ul {
+  list-style-type: none;
+  font-size: 0.75em;
+  padding-left: 0;
+}
+#download {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto, 1fr;
+  column-gap: 10px;
+}
+.social-media {
+  display: inline-block;
+}
+footer img {
+  height: 1em;
+  display: inline-block;
+}
+.download-links {
+  width: 90%;
+}
+.copyright {
+  font-size: 24px;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 0.875em;
+  }
+  /*-----NAV-BAR ELEMENTS-----*/
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+  }
+  #header img {
+    width: 50%;
+  }
+
+  /*-----INTRO ELEMENTS-----*/
+  #intro {
+    margin-top: 2em;
+    font-size: 0.75em;
+  }
+  #intro h1 {
+    font-size: 2.3em;
+    text-wrap: pretty;
+  }
+  .intro-container {
+    flex-direction: column;
+  }
+  .intro-text,
+  .intro-video {
+    width: 100%;
+  }
+  .red-button {
+    font-size: 10vw;
+  }
+
+  /*-----ABOUT ELEMENTS-----*/
+  #about {
+    font-size: 1em;
+  }
+  #about h2 {
+    margin: 0.25 auto;
+    font-size: 2em;
+  }
+  .bullet-points,
+  ul {
+    width: 100%;
+  }
+  #about li {
+    margin-left: 0;
+  }
+
+  /*-----PACKS ELEMENTS-----*/
+  .sign {
+    width: 95%;
+  }
+  .sign h2 {
+    font-size: 3em;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .sign p {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+  }
+  .card-title {
+    font-size: 2em;
+  }
+  .price,
+  .buy-button {
+    font-size: 3em;
+  }
+
+  /*-----EMAIL ELEMENTS-----*/
+  #email-sign-up h2 {
+    font-size: 2em;
+  }
+  #email {
+    width: 90%;
+  }
+
+  /*-----FOOTER ELEMENTS-----*/
+  footer {
+    flex-direction: column;
+  }
+  footer div {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #download {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    width: 100%;
+    column-gap: 30px;
+  }
+  .download-links {
+    text-wrap: nowrap;
+    width: fit-content;
+    margin-right: 10px;
+    font-size: 0.8em;
+  }
+}
+
+/* Responsive styles for hamburger menu*/
+@media only screen and (max-width: 768px) {
+  .menu-button {
+    display: block; /* Show hamburger on mobile*/
+    z-index: 999;
+    padding-right: 10px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hide off-screen initially */
+    width: 200px;
+    height: 100vh;
+    background-color: #222;
+    flex-direction: column;
+    padding: 80px 0 30px 0;
+    transition: right 0.3s ease;
+    z-index: 998;
+  }
+  .nav-menu li {
+    padding-left: 0 0.75em;
+  }
+
+  /* The little robots use sorcery to animate the menu*/
+
+  /* The magic: when checkbox is checked, show the menu */
+  #menu-toggle:checked ~ .nav-menu {
+    right: 0;
+  }
+
+  /* Animate hamburger to X when menu is open */
+  #menu-toggle:checked ~ .menu-button .hamburger {
+    background-color: transparent;
+  }
+
+  #menu-toggle:checked ~ .menu-button .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  #menu-toggle:checked ~ .menu-button .hamburger::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+}
+
+/* Mobile View (default, up to 767px) */
+/* Already set width: 100% in the base .price-card style */
+
+/* Tablet View (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .price-card {
+    width: 45%;
+    margin: 0 2% 30px 2%;
+  }
+
+  .price-card:nth-child(3) {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Desktop View (992px and above) */
+@media (min-width: 992px) {
+  .price-card {
+    flex-wrap: wrap;
+
+    width: 30%;
+    margin: 0 1.5% 30px 1.5%;
+  }
+}
