@@ -555,6 +555,7 @@ footer img {
   /*-----INTRO ELEMENTS-----*/
   #intro {
     margin-top: 2em;
+    padding-top: 80px;
     font-size: 0.75em;
   }
   #intro h1 {
