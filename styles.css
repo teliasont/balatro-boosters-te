@@ -173,6 +173,7 @@ section {
 #intro {
   background: url(https://store.fastly.steamstatic.com/images/storepagebackground/app/2379780?t=1740416199);
   background-position: center center;
+  background-size: 100% 100%;
   padding-top: 40px;
   top: -10px;
   loading: lazy;
