@@ -612,9 +612,11 @@ footer img {
   }
 
   /*-----EMAIL ELEMENTS-----*/
+  #email-sign-up{
+    padding: 30px;
+  }
   #email-sign-up h2 {
     font-size: 2em;
-    padding: 30px;
   }
   #email {
     width: 90%;
