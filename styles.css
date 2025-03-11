@@ -614,7 +614,7 @@ footer img {
   /*-----EMAIL ELEMENTS-----*/
   #email-sign-up h2 {
     font-size: 2em;
-    margin: 30px;
+    padding: 30px;
   }
   #email {
     width: 90%;
